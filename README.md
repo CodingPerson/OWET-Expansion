@@ -47,8 +47,15 @@ Based on this file, we run the following command to start training:
 sh train_OntoNotes.sh "init_file"
 ```
 
+LDHA saves the checkpoint files “TP_path_BBN” and “TP_path_OntoNotes” for the BBN and OntoNotes datasets, respectively.
+
 ## HLTI for Ontology Enrichment Subtask
 
 #### Run HLTI on the BBN dataset:
-
+```
+python top-down-search.py --TR_parh "TP_path_BBN" --dataset BBN
+```
 #### Run HLTI on the OntoNotes dataset:
+```
+python top-down-search.py --TR_parh "TP_path_OntoNotes" --dataset OntoNotes
+```
