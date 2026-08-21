@@ -1,4 +1,4 @@
-# The Framework DVHA
+# Open-World Entity Typing via LLM-Enhanced Hypercube Alignment
 
 ## Environment
 
