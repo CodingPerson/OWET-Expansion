@@ -1,11 +1,13 @@
 import copy
 import csv
 import os
+import parser
 from collections import Counter, defaultdict
 from itertools import combinations
 
 from sklearn.cluster import KMeans
 
+from config import initConfig
 from train import getClusterResult, getclusterInfo, logClusterMatch, getInstanceCounts, getPathMatch, maxMatchScore, \
 getConceptCounts
 
@@ -120,17 +122,23 @@ from search_util import ClusterMerge, ClusterFilter
 #         return clusterResult, all_idxes, all_feats, level_preds, (clusterAccDict, b3Dict, VmARINMIDict), mask_lab
 
 
+myargs = initConfig()
+path = myargs.TR_path
+data = myargs.dataset
 
-
-
-args = loadCheckConfig('log/train_OntoNotes_20260410_104509/config.pkl')
+args = loadCheckConfig(path+'/config.pkl')
 # args = loadCheckConfig('log/train_BBN_20260513_172238/config.pkl')
 args.device = 0
-checkpoint = torch.load(
-    'log/train_OntoNotes_20260410_104509/checkpoint_OntoNotes_lr_2e-05_latest.pth',
-    weights_only=True,map_location=torch.device('cuda:'+str(args.device)))
+if data=='OntoNotes':
+    checkpoint = torch.load(
+        path+'/checkpoint_OntoNotes_lr_2e-05_latest.pth',
+        weights_only=True,map_location=torch.device('cuda:'+str(args.device)))
+elif data=='BBN':
+    checkpoint = torch.load(
+        path + '/checkpoint_BBN_lr_2e-05_latest.pth',
+        weights_only=True, map_location=torch.device('cuda:' + str(args.device)))
 
-save_dir = 'log/train_OntoNotes_20260410_104509'
+save_dir = path
 for key, value in vars(args).items():
     print(f"{key}:{value}")
 setSeed(args.seed, args.n_gpu)

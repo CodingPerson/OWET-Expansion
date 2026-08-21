@@ -1087,7 +1087,7 @@ def extract_unknown_clusters(refined_paths, cluster_ins_re_dict,cluster_ins_data
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-def extract_representative_samples(cluster_rep, cluster_data, num_samples=20):
+def extract_representative_samples(cluster_rep, cluster_data, num_samples=10):
     """
     从 cluster 中选出最接近中心的代表性样本（返回原始数据）
 
