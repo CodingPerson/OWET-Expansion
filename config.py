@@ -4,7 +4,7 @@ import argparse
 def initConfig():
     args = argparse.ArgumentParser()
     args.add_argument('--seed', type=int, default=11)
-    args.add_argument('--dataset', type=str, default='BBN', choices=['BBN', 'OntoNotes', 'FewNerd'])
+    args.add_argument('--dataset', type=str, default='OntoNotes', choices=['BBN', 'OntoNotes', 'FewNerd'])
     args.add_argument('--device', type=int, default=0)
     args.add_argument('--n_gpu', type=int, default=1)
     args.add_argument('--pretrain_path', type=str, default=None)
@@ -113,5 +113,11 @@ def initConfig():
     args.add_argument('--input_limit', type=int, default=1000)
     args.add_argument('--do_lower', type=bool, default=False)
 
+    args.add_argument('--enable_active', type=int, choices=[0, 1])
+    args.add_argument('--enable_oracle', type=int, choices=[0, 1])
+    args.add_argument('--enable_refine', type=int, choices=[0, 1])
+    args.add_argument('--random', type=int, choices=[0, 1])
+    args.add_argument('--active_budget', type=float, default=0.2)
+    args.add_argument('--LLMpath', type=str, default='OntoNotes_gpt-5.4_predict_two-stage.txt')
     args = args.parse_args()
     return args

@@ -35,13 +35,17 @@ unknownSet = {
 split_dataPath = {
     'BBN': (
         'dataset/stdData/BBN/split/labeled.json',
+        'dataset/stdData/BBN/split/val.json',
         'dataset/stdData/BBN/split/unlabeled.json',
-        'dataset/stdData/BBN/split/unknown.json'
+        'dataset/stdData/BBN/split/unknown.json',
+        'dataset/stdData/BBN/split/extra_known.json'
     ),
     'OntoNotes': (
         'dataset/stdData/OntoNotes/split/labeled.json',
+        'dataset/stdData/OntoNotes/split/val.json',
         'dataset/stdData/OntoNotes/split/unlabeled.json',
-        'dataset/stdData/OntoNotes/split/unknown.json'
+        'dataset/stdData/OntoNotes/split/unknown.json',
+        'dataset/stdData/OntoNotes/split/extra_known.json'
     ),
     'FewNerd': (
         'dataset/stdData/FewNerd/split/labeled.json',
@@ -77,9 +81,9 @@ dataset_gold_k = {
 }
 
 type_description = {
-    'BBN': 'dataset/stdData/type_desc/BBN/gpt-4.1_full_path_new3.txt',
-    'OntoNotes': 'dataset/stdData/type_desc/OntoNotes/gpt-4.1_full_path_new3.txt',
-    'FewNerd': 'dataset/stdData/type_desc/FewNerd/gpt-4.1_full_path_new3.txt',
+    'BBN': 'dataset/stdData/type_desc/BBN/gpt-5.4-type.txt',
+    'OntoNotes': 'dataset/stdData/type_desc/OntoNotes/gpt-5.4-type.txt',
+    'FewNerd': 'dataset/stdData/type_desc/FewNerd/gpt-5.4-type.txt',
 }
 
 # 每个数据集的level级数

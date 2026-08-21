@@ -526,6 +526,7 @@ def toEval(model, device, dataloader, dataset, id2type, epoch, args, mode='one',
         targets = []
         mask_lab = np.array([])
         mask_unlab_known = np.array([])
+        mask_extra_known_and_label = np.array([])
         bar = tqdm.tqdm(enumerate(dataloader), total=len(dataloader),
                         desc='eval one epoch of extra feature')
         for step, batch in bar:
@@ -541,14 +542,18 @@ def toEval(model, device, dataloader, dataset, id2type, epoch, args, mode='one',
             mask_unlab_known = np.append(mask_unlab_known, np.array(
                 [True if dataset.data[i]['mention']['dtype'] == 'known_unlabeled' else False
                  for i in idxes]))
+            mask_extra_known_and_label = np.append(mask_extra_known_and_label, np.array(
+                [True if dataloader.dataset.data[i]['mention']['dtype'] == 'extra' or
+                         dataloader.dataset.data[i]['mention']['dtype'] == 'known_labeled' else False
+                 for i in idxes]))
 
         targets = np.asarray(targets)
         all_feats = np.asarray(all_feats)
         level_target = getLevelTarget(targets, args.data_level, id2type)
         mask_lab = mask_lab.astype(bool)
         mask_unlab_known = mask_unlab_known.astype(bool)
-        if epoch == 0:
-            print(np.array_equal(mask_lab, mask_unlab_known))
+        mask_extra_known_and_label = mask_extra_known_and_label.astype(bool)
+
 
         # cluster acc
         clusterAccDict = dict()
@@ -564,7 +569,7 @@ def toEval(model, device, dataloader, dataset, id2type, epoch, args, mode='one',
             raise Exception(f'args.cluster_type error {args.cluster_type}')
 
         if args.cluster_type in ['HAC', 'HDBSCAN']:
-            level_acc, best_level_k, preds = test_agglo(linked, level_target, mask_lab, mask_unlab_known, args,
+            level_acc, best_level_k, preds = test_agglo(linked, level_target, mask_lab, mask_unlab_known, mask_extra_known_and_label,args,
                                                         rePred=True)
         elif args.cluster_type == 'FINCH':
             level_acc, best_level_k, preds = finch_acc(c, num_clust, all_feats, level_target, mask_lab,
@@ -584,7 +589,7 @@ def toEval(model, device, dataloader, dataset, id2type, epoch, args, mode='one',
         if mode == 'all':
             for base in range(1, 4):
                 if args.cluster_type in ['HAC', 'HDBSCAN']:
-                    level_acc, best_level_k, _ = test_agglo(linked, level_target, mask_lab, mask_unlab_known, args,
+                    level_acc, best_level_k, _ = test_agglo(linked, level_target, mask_lab, mask_unlab_known, mask_extra_known_and_label,args,
                                                             base=base)
                 elif args.cluster_type == 'FINCH':
                     level_acc, best_level_k, _ = finch_acc(c, num_clust, all_feats, level_target, mask_lab,
@@ -607,19 +612,18 @@ def toEval(model, device, dataloader, dataset, id2type, epoch, args, mode='one',
         target_lab = target[mask_lab]
         pred_lab = preds[mask_lab]
         # unlabeled
-        target_unlab = target[~mask_lab]
-        pred_unlab = preds[~mask_lab]
-        mask_unlab_known = mask_unlab_known[~mask_lab]
+        target_unlab = target[~mask_extra_known_and_label]
+        pred_unlab = preds[~mask_extra_known_and_label]
+        mask_unlab_known = mask_unlab_known[~mask_extra_known_and_label]
 
         targetList = [target_lab, target_unlab]
         predList = [pred_lab, pred_unlab]
-        if unlab_split:
-            target_unlab_known = target_unlab[mask_unlab_known]
-            pred_unlab_known = pred_unlab[mask_unlab_known]
-            target_unlab_unknown = target_unlab[~mask_unlab_known]
-            pred_unlab_unknown = pred_unlab[~mask_unlab_known]
-            targetList.extend([target_unlab_known, target_unlab_unknown])
-            predList.extend(([pred_unlab_known, pred_unlab_unknown]))
+        target_unlab_known = target_unlab[mask_unlab_known]
+        pred_unlab_known = pred_unlab[mask_unlab_known]
+        target_unlab_unknown = target_unlab[~mask_unlab_known]
+        pred_unlab_unknown = pred_unlab[~mask_unlab_known]
+        targetList.extend([target_unlab_known, target_unlab_unknown])
+        predList.extend(([pred_unlab_known, pred_unlab_unknown]))
 
         # B3
         b3Dict = getB3Eval(targetList, predList)
@@ -683,7 +687,7 @@ def main():
     print(args.num_known_class)
     print(type2id)
     # 加载数据
-    train_data, labeled_data, val_data = loadDataset(args.dataset, args.seed, args.split_val, args.val_ratio)
+    train_data, labeled_data, val_data,extra_known = loadDataset(args.dataset, args.seed, args.split_val, args.val_ratio,args.active_budget)
     print('labeled_data')
     print(len(labeled_data))
     print('val_data')
@@ -711,7 +715,7 @@ def main():
 
     # 有监督和自监督的dataloader
     if args.contra_type == 'sup':
-        adapted_data = train_data + labeled_data
+        adapted_data = train_data + labeled_data+extra_known
         adapted_dataset = OWETDataset(adapted_data, type2id, model.tokenizer, num_classes=args.num_known_class,
                                       args=args,
                                       mode='unlabeled')
@@ -722,7 +726,7 @@ def main():
                                         drop_last=True, collate_fn=labeled_collate_fn, sampler=sampler, num_workers=0,
                                         generator=adapted_g)
     elif args.contra_type in ['self', 'test']:
-        adapted_data = train_data + labeled_data
+        adapted_data = train_data + labeled_data+extra_known
         adapted_dataset = OWETDataset(adapted_data, type2id, model.tokenizer, num_classes=args.num_known_class,
                                       args=args,
                                       mode='unlabeled')
@@ -736,7 +740,7 @@ def main():
         raise Exception(f'no contra type {args.contra_type}')
 
     # eval的dataloader
-    total_data = train_data + labeled_data
+    total_data = train_data + labeled_data+extra_known
     eval_dataset = OWETDataset(total_data, type2id, model.tokenizer,
                                num_classes=args.num_known_class + args.num_unknown_class, args=args,
                                mode='labeled')
