@@ -1,0 +1,134 @@
+/LOCATION
+LOCATION denotes a geographic place or natural spatial area treated primarily as a physical portion of the Earth or its surface. It includes named places understood in terms of position, extent, or environmental identity rather than institutional or political structure. Typical examples include the Sahara, the Arctic, the Amazon Basin, and the Pacific Northwest.
+
+/LOCATION/REGION
+LOCATION/REGION refers to a named geographic area within the broader class of locations, typically defined by cultural, historical, environmental, or administrative coherence rather than sovereign status. Its scope includes subnational or transnational areas recognized as spatial units with meaningful boundaries or identity. Examples include the Midwest, Brittany, the Balkans, and the Ruhr.
+
+/LOCATION/CONTINENT
+LOCATION/CONTINENT denotes one of the Earth’s largest conventional land divisions within the broader category of geographic locations. It is characterized by very large territorial scale and by its role as a major global spatial grouping used in geography, history, and demography. Examples include Africa, Asia, Europe, and South America.
+
+/LOCATION/LAKE_SEA_OCEAN
+LOCATION/LAKE_SEA_OCEAN covers major named bodies of standing or open water as geographic locations. This type includes inland lakes, marginal seas, and the world’s oceans, all understood as large hydrographic features with recognized names and spatial extent. Examples include Lake Victoria, the Mediterranean Sea, and the Atlantic Ocean.
+
+/LOCATION/RIVER
+LOCATION/RIVER refers to named flowing watercourses within the larger class of geographic locations. It captures linear freshwater features defined by current, channel, drainage function, and geographic course across landscapes. Examples include the Nile, the Danube, the Mississippi River, and the Yangtze.
+
+/ORGANIZATION
+ORGANIZATION denotes a formally or socially constituted group of people acting as a collective entity for a shared purpose. It includes institutions, associations, firms, and other organized bodies recognized through structure, membership, or governance. Examples include the United Nations, Toyota, the Red Cross, and Harvard University.
+
+/ORGANIZATION/CORPORATION
+ORGANIZATION/CORPORATION refers to an organization constituted as a business entity engaged in commercial, industrial, or financial activity. Its defining scope centers on profit-oriented operations, legal business identity, and structured management of products, services, or assets. Examples include Apple, ExxonMobil, Samsung, and Siemens.
+
+/ORGANIZATION/GOVERNMENT
+ORGANIZATION/GOVERNMENT denotes an organization that exercises public authority or carries out the governing functions of a state or administrative jurisdiction. It includes ministries, agencies, departments, and executive bodies responsible for regulation, administration, or public service. Examples include the U.S. Department of State, the Government of Canada, and the Ministry of Finance of Japan.
+
+/ORGANIZATION/POLITICAL
+ORGANIZATION/POLITICAL refers to an organization formed to pursue political representation, advocacy, electoral participation, or ideological goals in public life. Its scope includes political parties, campaign bodies, and organized political movements with recognized membership or leadership structures. Examples include the Democratic Party, the Conservative Party, and the African National Congress.
+
+/ORGANIZATION/HOTEL
+ORGANIZATION/HOTEL denotes an organization operating an establishment that provides lodging and related hospitality services to guests. It is centered on accommodation management, guest services, booking operations, and often food, leisure, or conference offerings. Examples include Marriott, Hilton, and The Ritz-Carlton.
+
+/ORGANIZATION/RELIGIOUS
+ORGANIZATION/RELIGIOUS refers to an organization constituted around worship, faith practice, religious governance, or spiritual community life. It includes churches, dioceses, religious orders, and other formal bodies that maintain doctrine, ritual, or religious administration. Examples include the Catholic Church, the Southern Baptist Convention, and the Church of England.
+
+/ORGANIZATION/HOSPITAL
+ORGANIZATION/HOSPITAL denotes an organization that delivers medical diagnosis, treatment, nursing, and inpatient or specialized healthcare services. Its defining features include clinical staff, healthcare infrastructure, and an institutional role in patient care and medical administration. Examples include Mayo Clinic, Massachusetts General Hospital, and Apollo Hospitals.
+
+/ORGANIZATION/EDUCATIONAL
+ORGANIZATION/EDUCATIONAL refers to an organization whose principal purpose is instruction, learning, training, or academic research. It includes schools, colleges, universities, and other formal educational institutions with curricula, faculty, and enrolled learners. Examples include Oxford University, MIT, and the University of Cape Town.
+
+/PERSON
+PERSON denotes an individual human being considered as a distinct entity. This type covers named people regardless of profession, social role, or historical significance. Examples include Marie Curie, Nelson Mandela, Taylor Swift, and Leonardo da Vinci.
+
+/SUBSTANCE
+SUBSTANCE denotes a material entity characterized by physical or chemical composition rather than by agency, organization, or discrete object form. It includes natural and artificial materials recognized as matter that can be consumed, processed, analyzed, or used. Examples include aspirin, gold, sugar, and ethanol.
+
+/SUBSTANCE/DRUG
+SUBSTANCE/DRUG refers to a substance used for medical treatment, prevention, diagnosis, or physiological effect in humans or animals. Its core scope includes pharmaceuticals, medicinal compounds, and therapeutic agents recognized by clinical or pharmacological use. Examples include ibuprofen, insulin, penicillin, and morphine.
+
+/SUBSTANCE/CHEMICAL
+SUBSTANCE/CHEMICAL denotes a substance identified chiefly by chemical composition, molecular structure, or industrial/scientific use. It includes elements, compounds, reagents, and manufactured chemicals understood as substances in chemistry or materials handling. Examples include sodium chloride, benzene, sulfuric acid, and ammonia.
+
+/SUBSTANCE/FOOD
+SUBSTANCE/FOOD refers to a substance intended for consumption as nourishment or culinary use. It includes edible materials, ingredients, prepared foods, and food products understood primarily in terms of eating, nutrition, or cooking. Examples include rice, cheese, chocolate, and olive oil.
+
+/GPE
+GPE denotes a geopolitical entity: a named place understood as a political or administrative unit associated with governance, population, and territory. It covers jurisdictions that function as civic units rather than merely physical places. Examples include France, California, and Tokyo.
+
+/GPE/CITY
+GPE/CITY refers to an urban geopolitical entity recognized as a municipal or metropolitan unit with civic administration and named territorial identity. Its scope includes cities understood as populated settlements with local government, infrastructure, and social-economic concentration. Examples include Paris, Mumbai, New York City, and Lagos.
+
+/GPE/STATE_PROVINCE
+GPE/STATE_PROVINCE denotes a first-level or major subnational geopolitical unit within a country. It is defined by formal administrative status, territorial jurisdiction, and institutional governance below the national level. Examples include Ontario, Bavaria, Texas, and New South Wales.
+
+/GPE/COUNTRY
+GPE/COUNTRY refers to a sovereign or internationally recognized national geopolitical entity. Its defining features include national territory, central government, population, and standing in diplomacy or international affairs. Examples include Brazil, Japan, Kenya, and Norway.
+
+/PRODUCT
+PRODUCT denotes a manufactured or intentionally designed artifact produced for use, consumption, or sale. It includes tangible goods recognized primarily as items of production and practical deployment rather than as substances or institutions. Examples include laptops, automobiles, rifles, and refrigerators.
+
+/PRODUCT/VEHICLE
+PRODUCT/VEHICLE refers to a product designed for transporting people or goods through land, air, water, or space. It includes conveyances characterized by mobility, engineered transport function, and operation as machines or transport platforms. Examples include cars, helicopters, submarines, and trains.
+
+/PRODUCT/WEAPON
+PRODUCT/WEAPON denotes a product designed to injure, damage, threaten, or support combat or armed force. Its scope includes offensive and defensive implements whose central function lies in warfare, attack, or tactical use. Examples include pistols, missiles, swords, and artillery systems.
+
+/FACILITIES
+FACILITIES denotes built physical infrastructure intended to support human activity, access, service provision, or occupancy. It includes structures and engineered sites recognized by their functional role in the built environment. Examples include airports, bridges, office towers, and tourist landmarks.
+
+/FACILITIES/BUILDING
+FACILITIES/BUILDING refers to a facility consisting of a constructed edifice with enclosed or semi-enclosed space for habitation, work, storage, worship, or other organized use. Its defining features include architectural structure, occupancy-oriented design, and standing construction on a site. Examples include skyscrapers, houses, courthouses, and libraries.
+
+/FACILITIES/AIRPORT
+FACILITIES/AIRPORT denotes a facility built for the arrival, departure, and ground servicing of aircraft and passengers or cargo. It includes runways, terminals, control infrastructure, and associated aviation operations as part of an integrated transport site. Examples include Heathrow Airport, JFK Airport, and Changi Airport.
+
+/FACILITIES/HIGHWAY_STREET
+FACILITIES/HIGHWAY_STREET refers to a facility consisting of a named roadway used for vehicular or urban transit. It includes highways, roads, avenues, and streets understood as engineered transport corridors embedded in transportation networks. Examples include Interstate 95, Wall Street, and the M25.
+
+/FACILITIES/ATTRACTION
+FACILITIES/ATTRACTION denotes a facility or built site known chiefly as a destination for tourism, leisure, or public interest. Its scope includes landmarks, amusement venues, and visitor-oriented sites recognized for experiential, cultural, or recreational appeal. Examples include Disneyland, the Eiffel Tower, and Universal Studios.
+
+/FACILITIES/BRIDGE
+FACILITIES/BRIDGE refers to a facility engineered to span an obstacle such as water, terrain, or transportation corridors in order to enable passage. It is characterized by structural crossing function, fixed civil engineering design, and integration into movement infrastructure. Examples include the Golden Gate Bridge, Tower Bridge, and the Brooklyn Bridge.
+
+/DISEASE
+DISEASE denotes a pathological condition affecting an organism and involving dysfunction, impairment, or characteristic clinical manifestations. It includes named illnesses recognized in medicine, public health, or biology as distinct disease entities. Examples include diabetes, influenza, tuberculosis, and Alzheimer’s disease.
+
+/EVENT
+EVENT denotes an occurrence or happening situated in time and often involving participants, effects, or historical significance. It includes natural, social, military, and public happenings treated as bounded or identifiable episodes. Examples include a hurricane, a war, an election, or a festival.
+
+/EVENT/HURRICANE
+EVENT/HURRICANE refers to a named tropical cyclone event within the broader class of events. It is characterized by meteorological development, storm circulation, destructive weather impact, and temporal progression across affected regions. Examples include Hurricane Katrina, Hurricane Sandy, and Hurricane Ian.
+
+/EVENT/WAR
+EVENT/WAR denotes an organized armed conflict event involving states, governments, or other large-scale forces over a sustained period. Its core features include military engagement, strategic campaigns, political objectives, and substantial historical consequence. Examples include World War II, the Korean War, and the Iran–Iraq War.
+
+/GAME
+GAME denotes a structured activity governed by rules and oriented toward play, competition, skill, chance, or entertainment. It includes named games in physical, tabletop, digital, or traditional forms when treated as recognized ludic systems. Examples include chess, soccer, poker, and Minecraft.
+
+/LANGUAGE
+LANGUAGE denotes a natural or formal system of communication identified by shared vocabulary, grammar, and usage among a community or within a defined domain. It includes human languages treated as named linguistic entities. Examples include Arabic, Swahili, Mandarin Chinese, and Spanish.
+
+/PLANT
+PLANT denotes a living organism belonging to the plant kingdom or a commonly recognized botanical entity. It includes trees, flowers, crops, shrubs, and other named plants understood as biological taxa or familiar plant kinds. Examples include oak, rose, wheat, and bamboo.
+
+/CONTACT_INFO
+CONTACT_INFO denotes an informational identifier used to reach, locate, or connect with a person, organization, or service. It includes items such as phone numbers, email addresses, mailing addresses, and other communication coordinates. Examples include support@example.com, +1-212-555-0100, and a postal address.
+
+/WORK_OF_ART
+WORK_OF_ART denotes a created intellectual or artistic artifact recognized as a distinct cultural production. It includes literary, musical, dramatic, and other expressive works identified by title or established authorship. Examples include *Hamlet*, *Imagine*, and *The Odyssey*.
+
+/WORK_OF_ART/BOOK
+WORK_OF_ART/BOOK refers to a written or published work of substantial textual content within the broader class of artistic or intellectual creations. It includes novels, nonfiction works, memoirs, and other titled books recognized as complete literary publications. Examples include *Pride and Prejudice*, *1984*, and *The Origin of Species*.
+
+/WORK_OF_ART/PLAY
+WORK_OF_ART/PLAY denotes a dramatic work written for theatrical performance. Its defining features include scripted dialogue, staged action, characters, and a form intended for enactment before an audience or in adapted performance media. Examples include *Hamlet*, *Death of a Salesman*, and *A Doll’s House*.
+
+/WORK_OF_ART/SONG
+WORK_OF_ART/SONG refers to a musical work structured as a song, typically involving lyrics, melody, and performable composition. It includes titled vocal music pieces recognized as distinct works in popular, classical, folk, or other musical traditions. Examples include *Imagine*, *Hey Jude*, and *Bohemian Rhapsody*.
+
+/LAW
+LAW denotes a formally enacted legal rule, code, statute, treaty, or body of binding normative regulation. It includes named legal instruments and established legal frameworks recognized by governing authorities or judicial systems. Examples include the Civil Rights Act, the Constitution of India, and the Geneva Conventions.
+
+/ANIMAL
+ANIMAL denotes a living organism belonging to the animal kingdom, treated either as a species, taxonomic group, or commonly named animal kind. It includes mammals, birds, reptiles, fish, insects, and other non-plant multicellular organisms recognized in biology or common usage. Examples include tiger, eagle, salmon, and butterfly.
