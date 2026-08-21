@@ -8,16 +8,7 @@
 
 ## Datasets
 
-We construct two benchmark datasets of the OWET task based on existing fine-grained entity typing datasets (BBN, OntoNotes), which are provided in the folder `data`. The dataset statistics are shown as follows:
-
-|            **Dataset**             | **BBN** | OntoNotes |
-| :--------------------------------: | :-----: | :-------: |
-|          **Known types**           |   34    |    43     |
-|         **Unknown types**          |   11    |    14     |
-|       **Training instances**       |  4641   |   3505    |
-|      **Validation instances**      |  1154   |    863    |
-|  **Known-type testing instances**  |  5775   |   4348    |
-| **Unknown-type testing instances** |  1712   |   1758    |
+We construct two benchmark datasets of the OWET task based on existing fine-grained entity typing datasets (BBN, OntoNotes), which are provided in the folder `data`.
 
 ## LDHA for Type Recognition Subtask
 
