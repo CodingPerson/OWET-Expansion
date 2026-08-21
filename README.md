@@ -1,4 +1,4 @@
-# Open-World Entity Typing via LLM-Enhanced Hypercube Alignment
+# The Framework DVHA
 
 ## Environment
 
@@ -19,9 +19,9 @@ We construct two benchmark datasets of the OWET task based on existing fine-grai
 |  **Known-type testing instances**  |  5775   |   4348    |
 | **Unknown-type testing instances** |  1712   |   1758    |
 
-## LDHA for Type Recognition Subtask
+## Reproduce
 
-#### Run LDHA on the BBN dataset:
+#### Run DVHA on the BBN dataset:
 
 ```
 sh init_BBN.sh 
@@ -34,7 +34,7 @@ Based on this file, we run the following command to start training:
 sh train_BBN.sh "init_file"
 ```
 
-#### Run LDHA on the OntoNotes dataset:
+#### Run DVHA on the OntoNotes dataset:
 
 ```
 sh init_OntoNotes.sh 
@@ -46,11 +46,3 @@ Based on this file, we run the following command to start training:
 ```
 sh train_OntoNotes.sh "init_file"
 ```
-
-## HLTI for Ontology Enrichment Subtask
-
-#### Run HLTI on the BBN dataset:
-
-
-#### Run HLTI on the OntoNotes dataset:
-
