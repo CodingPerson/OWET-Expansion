@@ -1,0 +1,170 @@
+/other
+This type covers entities that do not fall under the primary high-level categories of person, organization, or location. It serves as a broad semantic area for abstract, material, biological, cultural, and event-like things that are referentially salient but not naturally modeled as actors, institutions, or places. Entities here often include objects, phenomena, concepts, and classes of things such as gold, diabetes, Halloween, or a microscope.
+
+/location
+This type includes entities whose primary identity is as a place, spatial area, or physically situated site. It captures geographic regions, built environments, transit-related places, and named areas that can be located in physical space. Examples include France, Tokyo, the Sahara, Central Park, and Heathrow Airport.
+
+/organization
+This type includes entities that are constituted as formal or semi-formal groups, institutions, or collective bodies. Its scope covers governing bodies, companies, teams, schools, exchanges, and other organized social units with membership, structure, or coordinated activity. Examples include the United Nations, Apple, the Democratic Party, and Harvard University.
+
+/person
+This type includes individual human beings, whether identified by personal name, role, profession, office, or honorific designation. It covers people as social and legal agents rather than groups or institutions. Examples include Nelson Mandela, Frida Kahlo, a judge, or a king.
+
+/other/currency
+This type includes monetary units and recognized mediums of exchange within the broader category of non-person, non-organization, non-location entities. It refers to currencies as economic denominations rather than physical coins or financial institutions. Examples include the US dollar, euro, yen, and bitcoin when referenced as a currency unit.
+
+/other/health
+This type includes health-related conditions, states, and medically relevant phenomena within the broader non-agentive category. It captures diseases, disorders, syndromes, and other health concepts that are discussed as conditions affecting living beings. Examples include cancer, influenza, depression, and hypertension.
+
+/other/event
+This type includes temporally bounded occurrences, happenings, and incidents. It refers to things that unfold in time rather than enduring objects or institutions, and may be planned, spontaneous, social, natural, or historical. Examples include a festival, an election, a war, or an earthquake.
+
+/other/product
+This type includes manufactured, engineered, or commercially distributed items within the broad non-person, non-place space. It covers tangible goods and certain designed technological artifacts that are identified as products rather than organizations or events. Examples include a laptop, a rifle, a sedan, or a software package.
+
+/other/living_thing
+This type includes non-human life forms and biological organisms. It captures living entities as organisms rather than as people, places, or institutions, and may include individual creatures or biological taxa depending on context. Examples include an oak tree, a wolf, a bacterium, and an eagle.
+
+/other/sports_and_leisure
+This type includes activities, practices, games, and recreational domains associated with sport or leisure. It refers to the pursuit or form of activity itself rather than a single event occurrence or an organization. Examples include tennis, skiing, chess, and camping.
+
+/other/body_part
+This type includes anatomical components of an organism’s body. It covers named physical parts and structures that function as portions of a living body rather than as independent organisms or health conditions. Examples include the heart, knee, retina, and spine.
+
+/other/heritage
+This type includes culturally or historically significant artifacts, traditions, monuments, or inherited cultural assets conceptualized as heritage. It refers to things valued for preservation, identity, memory, or civilizational significance. Examples include the Rosetta Stone, oral traditions, UNESCO heritage artifacts, or ceremonial regalia.
+
+/other/scientific
+This type includes scientific concepts, substances, phenomena, fields, or technical entities not better captured by more specific branches. It serves as a category for items recognized primarily in scientific discourse or classification. Examples include gravity, DNA, quantum mechanics, and a chemical element such as helium.
+
+/other/supernatural
+This type includes entities, beings, forces, or phenomena understood as supernatural, mythic, or religiously extraordinary. It covers referents whose identity depends on beliefs about transcendence, magic, or non-natural agency. Examples include ghosts, angels, demons, and curses.
+
+/location/country
+This type includes sovereign states and widely recognized geopolitical countries within the broader category of locations. These entities are defined by territorial extent, political jurisdiction, and national identity as place-like units. Examples include Brazil, Japan, Kenya, and Canada.
+
+/location/city
+This type includes named urban settlements recognized as cities or city-level municipalities. It refers to populated places with civic identity, administrative presence, and built urban form. Examples include Paris, Mumbai, القاهرة, and São Paulo.
+
+/location/structure
+This type includes built physical constructions that function as discrete places or facilities. It captures human-made structures identified as location entities, such as buildings and complexes with stable spatial presence. Examples include a courthouse, hotel, stadium, or museum building.
+
+/location/geography
+This type includes natural geographic features and physical land or water formations. It refers to place-like entities grounded in the natural environment rather than built structures or political jurisdictions. Examples include the Himalayas, the Amazon rainforest, the Nile, and the Gobi Desert.
+
+/location/park
+This type includes named parks and protected recreational or natural-use areas treated as locations. It covers public green spaces, national parks, and similar designated areas with spatial boundaries and place identity. Examples include Yellowstone National Park, Hyde Park, and Yosemite.
+
+/location/transit
+This type includes transportation-related places and route infrastructures that are primarily spatial entities. It covers transit corridors, networks, and facilities whose identity is tied to movement, access, and transportation geography. Examples include Interstate 95, a railway line, or an airport transit hub.
+
+/organization/government
+This type includes governmental bodies, state institutions, and official public authorities within the organization category. It refers to organized entities that exercise public administration, governance, regulation, or state power. Examples include the UK government, the Ministry of Finance, and the European Commission.
+
+/organization/stock_exchange
+This type includes organized financial marketplaces where securities and similar instruments are listed, traded, or regulated. It captures exchange institutions as formal organizations rather than the abstract market itself. Examples include the New York Stock Exchange, Nasdaq, and the Tokyo Stock Exchange.
+
+/organization/military
+This type includes armed forces, military branches, and defense-related organized bodies. It refers to institutions constituted for warfare, defense, security operations, or military command. Examples include the US Army, the Royal Navy, and NATO when referenced as a military body.
+
+/organization/political_party
+This type includes organized political associations formed to participate in governance, elections, or public policy competition. It captures parties as enduring institutions with membership, leadership, ideology, and electoral activity. Examples include the Labour Party, the Republican Party, and the Bharatiya Janata Party.
+
+/organization/sports_team
+This type includes organized athletic teams recognized as collective competitive units. It refers to clubs, franchises, national teams, or similar bodies defined by rostered participation in sport. Examples include FC Barcelona, the Los Angeles Lakers, and the Brazil national football team.
+
+/organization/education
+This type includes schools, universities, colleges, and other formal educational institutions. It captures organizations whose central function is teaching, training, scholarship, or academic administration. Examples include Oxford University, MIT, and a public high school district.
+
+/person/political_figure
+This type includes individual persons known primarily through political office, leadership, governance, or public political activity. It covers elected officials, heads of state, ministers, legislators, and other politically salient persons. Examples include Angela Merkel, Abraham Lincoln, and Jacinda Ardern.
+
+/person/legal
+This type includes individual persons identified through legal professions, judicial roles, or direct participation in legal processes. It captures humans whose referential identity is tied to law as practice, adjudication, or representation. Examples include a judge, prosecutor, defense attorney, or solicitor general.
+
+/other/art
+This type includes artistic works, media forms, and cultural creations treated as non-person, non-place entities. It captures creative productions and art-domain objects considered as works, genres, or media artifacts. Examples include a novel, a television program, a painting, or a poem.
+
+/other/legal
+This type includes legal instruments, doctrines, cases, statuses, and law-related non-person entities. It refers to the conceptual and documentary side of law rather than legal professionals or institutions. Examples include a contract, statute, indictment, or constitutional amendment.
+
+/other/food
+This type includes edible substances, dishes, ingredients, and food items. It captures things primarily identified as consumable nourishment or cuisine-related entities. Examples include bread, sushi, olive oil, and curry.
+
+/organization/company
+This type includes business enterprises and commercial corporations organized to produce goods or services. It refers to firms as institutional actors with ownership, management, and operational identity. Examples include Apple, Toyota, Samsung, and Reuters.
+
+/person/artist
+This type includes individual persons whose primary identity is tied to creative or performing arts. It covers creators, performers, and art-world figures recognized through artistic production or expression. Examples include Picasso, Beyoncé, Akira Kurosawa, and Meryl Streep.
+
+/person/title
+This type includes person-referential titles, ranks, and honorific designations used to denote an individual by role or status. It captures labels such as monarchic, noble, clerical, or formal offices when the reference is to a person under that title. Examples include king, duke, pope, and professor.
+
+/other/health/treatment
+This type includes medical treatments, therapeutic interventions, and care methods within the broader health category. It refers to procedures, regimens, or modalities intended to prevent, manage, or cure health conditions. Examples include chemotherapy, physical therapy, vaccination, and dialysis.
+
+/other/event/sports_event
+This type includes athletic competitions and sport-related occurrences understood as bounded events. It captures tournaments, matches, races, and games as happenings in time rather than sports as activities or teams as organizations. Examples include the Super Bowl, Wimbledon final, and the Boston Marathon.
+
+/other/event/protest
+This type includes demonstrations, marches, strikes, and other acts of collective public dissent as events. It refers to temporally situated episodes of political or social expression, often organized around demands, opposition, or solidarity. Examples include the March on Washington, a climate strike, or an anti-government rally.
+
+/other/event/holiday
+This type includes commemorative, festive, or officially recognized calendar occasions treated as events. It captures recurring observances marked by ritual, celebration, remembrance, or public recognition. Examples include Christmas, Diwali, Eid al-Fitr, and Independence Day.
+
+/other/event/natural_disaster
+This type includes destructive natural events arising from geophysical, meteorological, hydrological, or related processes. It refers to disasters as occurrences in time with significant physical impact and often human consequence. Examples include Hurricane Katrina, the 2011 Tōhoku earthquake, and a volcanic eruption.
+
+/other/event/election
+This type includes formal voting events through which representatives, leaders, or propositions are chosen. It captures elections as organized civic occurrences with candidates, ballots, constituencies, and results. Examples include the 2020 US presidential election, a parliamentary election, or a mayoral runoff.
+
+/other/product/weapon
+This type includes products designed primarily to inflict damage, incapacitate, or support combat and armed force. It covers weapons as manufactured artifacts rather than military organizations or conflict events. Examples include a handgun, missile, sword, and assault rifle.
+
+/other/product/computer
+This type includes computing devices and computer hardware products designed for data processing and digital operation. It refers to identifiable product forms such as personal, portable, or specialized computers as physical technological items. Examples include a desktop PC, MacBook, server, and tablet computer.
+
+/other/product/software
+This type includes software products, applications, operating systems, and digital programs treated as designed products. It captures executable or deployable code-based artifacts rather than the hardware on which they run. Examples include Windows, Photoshop, Microsoft Word, and a mobile app.
+
+/other/living_thing/animal
+This type includes non-human animals as living organisms within the broader category of living things. It covers individual animals, species references, and zoological entities identified by animal life. Examples include a tiger, blue whale, sparrow, and dog.
+
+/location/structure/government
+This type includes government-related buildings and built sites whose primary identity is as official state or civic structures. It captures places such as capitols, courthouses, ministries, and administrative complexes as physical locations. Examples include the White House, the Pentagon, and a city hall building.
+
+/location/structure/hotel
+This type includes hotel buildings and lodging properties treated as physical structures. It refers to named accommodations whose place identity centers on hospitality, guest rooms, and short-term stay infrastructure. Examples include The Ritz Paris, Marina Bay Sands, and a Hilton property.
+
+/location/structure/sports_facility
+This type includes built venues designed for athletic competition, training, or spectator sports. It captures stadiums, arenas, tracks, and similar facilities as place entities with sport-centered physical infrastructure. Examples include Wembley Stadium, Madison Square Garden, and a baseball park.
+
+/location/transit/railway
+This type includes rail-based transit lines, railway corridors, and named rail infrastructures within the transit category. It refers to transportation routes or systems defined by train movement and rail alignment in space. Examples include the Trans-Siberian Railway, a metro line, or Amtrak’s Northeast Corridor.
+
+/location/transit/road
+This type includes roads, highways, streets, and named vehicular transit routes. It captures linear transportation infrastructure whose identity is tied to ground travel and roadway connectivity. Examples include Route 66, Interstate 5, and Oxford Street.
+
+/other/art/broadcast
+This type includes broadcast-based artistic or media works distributed through television, radio, or similar transmission channels. It refers to programs and produced media content as works, not to the companies that air them. Examples include a TV series, radio show, news program format, or documentary broadcast.
+
+/other/art/writing
+This type includes written artistic or literary works within the broader art category. It captures texts whose identity lies in authored written expression, including books, poems, plays, essays, and related works. Examples include *Hamlet*, *Beloved*, a sonnet, or a memoir.
+
+/other/product/car
+This type includes automobiles and car-model products designed for personal or passenger road transport. It refers to cars as manufactured vehicle products rather than roads, transit systems, or companies. Examples include the Toyota Corolla, Honda Civic, and Tesla Model 3.
+
+/other/event/violent_conflict
+This type includes wars, battles, armed clashes, and other conflict events marked by organized or substantial violence. It captures episodes of hostilities as happenings in time, whether local, civil, international, or insurgent in form. Examples include World War II, the Battle of Waterloo, and a civil war uprising.
+
+/organization/company/broadcast
+This type includes companies whose principal business is broadcast media production or transmission. It refers to corporate entities operating television, radio, or similar broadcasting services as commercial organizations. Examples include NBC, the BBC’s commercial arms in relevant contexts, and CBS.
+
+/organization/company/news
+This type includes companies primarily engaged in news gathering, reporting, publication, or news distribution. It captures commercial news organizations as firms with editorial and media operations. Examples include Reuters, The New York Times Company, and Bloomberg News in company reference.
+
+/person/artist/author
+This type includes individual artists whose primary creative identity is as writers or authors. It refers to persons known for producing written works such as novels, essays, poetry, plays, or other literary texts. Examples include Toni Morrison, Gabriel García Márquez, Jane Austen, and Chinua Achebe.
+
+/location/geography/body_of_water
+This type includes natural water-based geographic entities within the broader geography category. It captures seas, oceans, rivers, lakes, bays, and similar named water formations as place-like natural features. Examples include the Pacific Ocean, Lake Victoria, the Danube, and the Mediterranean Sea.
