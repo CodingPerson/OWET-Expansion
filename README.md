@@ -8,7 +8,7 @@
 
 ## Datasets
 
-We construct two benchmark datasets of the OWET task based on existing fine-grained entity typing datasets (BBN, OntoNotes), which are provided in the folder `data`.
+We construct two benchmark datasets of the OWET task based on existing fine-grained entity typing datasets (BBN, OntoNotes), which are provided in the folder `dataset`.
 
 ## LDHA for Type Recognition Subtask
 
